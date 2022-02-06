@@ -7,9 +7,9 @@
   - debug:
       #var: up
       msg: "{{up.stdout}}"
-   - name: pass to other play
-     set_stats:
-       data:
-         var1: "{{up.stdout}}"
+  - name: "pass to other play"
+    set_stats:
+      data:
+        var1: "{{up.stdout}}"
  
       
