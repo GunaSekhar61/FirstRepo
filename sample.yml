@@ -4,6 +4,8 @@
   tasks:
   - shell: hostname
     register: up
+    set_stats:
+      var1: up
       
   - debug:
      var: up.stdout
