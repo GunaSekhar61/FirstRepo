@@ -4,10 +4,9 @@
   tasks:
   - shell: hostname
     register: up
-
-    set_stats:
-      data:
-        var1: "{{up.stdout}}"
+      set_stats:
+        data:
+          var1: "{{up.stdout}}"
       
   - debug:
      var: up.stdout
