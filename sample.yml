@@ -2,7 +2,7 @@
   remote_user: devops
   hosts: localhost
   tasks:
-  - shell: uptime
+  - shell: hostname
     register: up
   - debug:
      var: up.stdout
