@@ -6,5 +6,6 @@
     register: up
   - debug:
       var: up
+      msg: "{{up.stdout}}"
  
       
