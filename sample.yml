@@ -4,5 +4,5 @@
   tasks:
   - shell: uptime
     register: up
-  - debug: 
-      var: up
+  - debug:
+     var: up
