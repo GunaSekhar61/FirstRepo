@@ -5,7 +5,7 @@
   - shell: hostname
     register: up
   - debug:
-      msg: up.stdout
+      msg: "{{up.stdout}}"
   - name: "Artifact URL of test results to Tower Workflows"
     set_stats:
       data:
