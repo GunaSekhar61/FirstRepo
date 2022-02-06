@@ -6,8 +6,5 @@
     register: up
   - debug:
       var: up
-  '''- name: "Artifact URL of test results to Tower Workflows"
-    set_stats:
-      data:
-        var1:  "{{up.raw_result.0}}"'''
+ 
       
