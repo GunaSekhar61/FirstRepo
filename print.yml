@@ -1,0 +1,5 @@
+- name: print host
+  host: localhost
+  tasks: 
+  - debug:
+     var: "{up.stdout}"
