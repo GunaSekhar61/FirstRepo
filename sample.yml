@@ -5,7 +5,7 @@
   - shell: hostname
     register: up
   - debug:
-      var: up
+      #var: up
       msg: "{{up.stdout}}"
  
       
