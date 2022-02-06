@@ -7,7 +7,7 @@
   - name: pass the data
     set_stats:
       data:
-        var1: "hello"
+        var1: up.stdout
       
   - debug:
      var: up.stdout
