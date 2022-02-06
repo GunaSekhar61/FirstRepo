@@ -4,8 +4,10 @@
   tasks:
   - shell: hostname
     register: up
+  - name: pass the data
     set_stats:
-      var1: up
+      data:
+        var1: up.stdout
       
   - debug:
      var: up.stdout
