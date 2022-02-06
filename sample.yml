@@ -3,4 +3,6 @@
   hosts: localhost
   tasks:
   - shell: uptime
-  debug: up
+    register: up
+  - debug: 
+    up
