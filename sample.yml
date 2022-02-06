@@ -5,6 +5,6 @@
   - shell: hostname
     register: up
   - debug:
-      var: up.stdout
+      var: up
  
       
