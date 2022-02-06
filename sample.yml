@@ -1,4 +1,5 @@
 - name: sampleplay
+  remote_user: devops
   hosts: localhost
   tasks:
   - shell: uptime
