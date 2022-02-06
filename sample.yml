@@ -4,8 +4,8 @@
   tasks:
   - shell: hostname
     register: up
-   - debug:
-     msg: up.stdout
+  - debug:
+      msg: up.stdout
   - name: "Artifact URL of test results to Tower Workflows"
     set_stats:
       data:
